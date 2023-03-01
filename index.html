@@ -38,7 +38,7 @@
     <label for="number-input">Enter a number:</label>
     <input type="number" id="number-input" placeholder="Enter a number">
     <button id="check-button">Check</button>
-    <div id="result"></div>
+    <p id="result"></p>
 
     <h1>Questão 3 de 5</h1>
     <p>Dado um vetor que guarda o valor de faturamento diário de uma distribuidora, faça um programa, na linguagem que
@@ -58,9 +58,9 @@
 
     <!--RESULTADO FETCHDATA -->
     <h2>Estatísticas no período</h2>
-    <p id="total">Total vendido: <span></span></p>
-    <p id="dayMost">O maior valor de faturamento: <span></span></p>
-    <p id="dayLeast"> menor valor de faturamento: <span></span></p>
+    <p id="total">Total vendido: R$ <span></span></p>
+    <p id="dayMost">O maior valor de faturamento: R$ <span></span></p>
+    <p id="dayLeast"> menor valor de faturamento: R$ <span></span></p>
     <p id="monthlyAvg">Número de dias no mês em que o valor de faturamento diário foi superior à média mensal:
       <span></span>
     </p>
@@ -75,6 +75,16 @@
     </ul>
     <p> Escreva um programa na linguagem que desejar onde calcule o percentual de representação que cada estado teve
       dentro do valor total mensal da distribuidora.</p>
+
+    <!--RESULTADO PORCENTAGEM -->
+    <h2>Percentual de representação por estado:</h2>
+    <ul id="resultShare">
+      <li> SP: %</li>
+      <li> RJ: %</li>
+      <li> MG: %</li>
+      <li> ES: %</li>
+      <li> Outros: %</li>
+    </ul>
     <h1>Questão 5 de 5</h1>
     <p> Escreva um programa que inverta os caracteres de um string.</p>
     <p>IMPORTANTE:</p>
@@ -84,6 +94,10 @@
         código;</li>
       <li>Evite usar funções prontas, como, por exemplo, reverse;</li>
     </ul>
+    <label for="wordInput">Enter a word:</label>
+    <input type="text" id="wordInput">
+    <button id="reverseButton">Reverse</button>
+    <p id="resultReverse"></p>
 
   </div>
   <script type="module" src="./main.js"></script>

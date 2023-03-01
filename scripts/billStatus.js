@@ -16,11 +16,20 @@ const handleData = (data) => {
   let lowest = Math.min(...positiveNumbers);
   let sum = numbers.reduce((total, number) => total + number, 0);
   let average = sum / 30;
-  let numbersGreaterThanAverage = numbers.filter((number) => number > average);
-
+  let greaterAverage = numbers.filter((number) => number > average);
+  let normalizeNumbers = new Intl.NumberFormat('pt-BR', {
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  });
+  highest = normalizeNumbers.format(highest);
+  lowest = normalizeNumbers.format(lowest);
+  sum = normalizeNumbers.format(sum);
+  average = normalizeNumbers.format(average);
+  greaterAverage = greaterAverage.map((number) =>
+    normalizeNumbers.format(number),
+  );
   total.lastChild.textContent = sum;
   dayMost.lastChild.textContent = highest;
   dayLeast.lastChild.textContent = lowest;
-  monthlyAvg.children[0].textContent = numbersGreaterThanAverage.length;
-  console.log();
+  monthlyAvg.children[0].textContent = greaterAverage.length;
 };
