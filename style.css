@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 1.25rem;
+  font-family: sans-serif;
+  margin: 2rem;
+}
+#container {
+  display: grid;
+  place-items: center;
+  padding: 3rem;
+}
+
+h1 {
+  text-align: center;
+  border-bottom: 1px solid salmon;
+}
+
+h2,
+p {
+  margin-left: 1rem;
+}
+
+h2 {
+  border-top: 6px solid rgb(193, 193, 243);
+  padding-top: 1rem;
+}
+
+div {
+  border-top: 3px solid rgb(193, 193, 243);
+}
+
+span {
+  font-weight: bold;
+  color: rgb(180, 7, 7);
+}
