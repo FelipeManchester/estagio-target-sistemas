@@ -16,8 +16,8 @@ checkButton.addEventListener('click', () => {
   if (isNaN(num)) {
     result.textContent = 'Por favor, digite um número válido';
   } else if (isFibbonacci(num)) {
-    result.textContent = `${num} Faz parte da sequência Fibonacci`;
+    result.textContent = `O número ${num} faz parte da sequência de Fibonacci`;
   } else {
-    result.textContent = `${num} Não faz parte da sequência Fibonacci`;
+    result.textContent = `O número ${num} não faz parte da sequência de Fibonacci`;
   }
 });
