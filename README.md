@@ -6,7 +6,7 @@ Nesse repositório você encontrará as soluções dos desafios propostos no rec
 
 ## Soluções
 
-Você pode clicar [AQUI](https://felipemanchester.github.io/estagio-target-sistemas). e ver a página no ar com os resultados funcionando, ou rolar abaixo e ver as soluções detalhadamente.
+Você pode clicar [AQUI](https://felipemanchester.github.io/estagio-target-sistemas) e ver a página no ar com os resultados funcionando, ou rolar abaixo e ver as soluções detalhadamente.
 <br />
 Questão 1 de 5
 
